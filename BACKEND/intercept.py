@@ -33,9 +33,9 @@ async def get_atlas_status():
         
         return AtlasStatus(
             position=pos,
-            velocity_kmh=speed * 3600,  
-            distance_from_earth_au=distance_earth,
-            distance_from_sun_au=distance_sun,
+            velocity=speed * 3600,  
+            dist_from_earth_au=distance_earth,
+            dist_from_sun_au=distance_sun,
             last_updated=datetime.now()
         )
     except Exception as e:
